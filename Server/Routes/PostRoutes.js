@@ -61,6 +61,7 @@ router.route('/').post(async(req, res) => {
     }
 })
 
+// DELETE A POST
 router.route('/:_id').delete(async (req, res) => {
     try {
         const { _id } = await req.body
